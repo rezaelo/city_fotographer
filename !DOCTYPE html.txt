@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>پورتفولیوی عکاسی رضا | Reza's Photography Portfolio</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+            font-weight: 300;
+            opacity: 0.7;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 3px solid #555;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .photo-card {
+            background: white;
+            box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+            border-radius: 6px;
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .photo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+        }
+        .photo-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .photo-desc {
+            padding: 12px 15px;
+            font-size: 0.9rem;
+            line-height: 1.3;
+            color: #444;
+        }
+        .photo-desc .en {
+            color: #888;
+            font-style: italic;
+            font-size: 0.8rem;
+            margin-top: 6px;
+        }
+        footer {
+            background: #222;
+            color: #aaa;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>پورتفولیوی عکاسی رضا</h1>
+        <p>Reza's Photography Portfolio</p>
+    </header>
+    <main>
+        <section>
+            <h2>معرفی | About Me</h2>
+            <p>من رضا هستم؛ دانشجوی معماری و عاشق عکاسی و ادیت عکس. در این پورتفولیو، نمونه‌هایی از کارهای عکاسی خودم را ارائه می‌دهم.</p>
+            <p><em>I am Reza, an architecture student passionate about photography and photo editing. Here is a collection of my photography works.</em></p>
+        </section>
+        <section>
+            <h2>نمونه کارها | Portfolio</h2>
+            <div class="gallery">
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="نمونه عکس ۱" />
+                    <div class="photo-desc">
+                        پل قدیمی در مه صبحگاهی<br />
+                        <span class="en">Old bridge in the morning fog</span>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="نمونه عکس ۲" />
+                    <div class="photo-desc">
+                        نمای شهر در غروب خورشید<br />
+                        <span class="en">Cityscape at sunset</span>
+                    </div>
+                </div>
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="نمونه عکس ۳" />
+                    <div class="photo-desc">
+                        ساختمان مدرن با طراحی خاص<br />
+                        <span class="en">Modern building with unique design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>تماس با من | Contact</h2>
+            <p>برای همکاری و سفارش عکاسی می‌توانید از طریق ایمیل با من تماس بگیرید:</p>
+            <p><a href="mailto:reza.photography@example.com">reza.photography@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        © 2025 Reza's Photography Portfolio | تمامی حقوق محفوظ است
+    </footer>
+</body>
+</html>
